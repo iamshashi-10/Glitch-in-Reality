@@ -338,26 +338,26 @@ MonoBehaviour:
   m_Name: Standalone
   m_EditorClassIdentifier: Unity.XR.OpenXR::UnityEngine.XR.OpenXR.OpenXRSettings
   features:
-  - {fileID: 7793628090451549462}
-  - {fileID: -5064256407120982814}
   - {fileID: 392189276405547414}
-  - {fileID: 5333048160597149904}
-  - {fileID: 8452207919186746744}
-  - {fileID: -7526660543599495627}
-  - {fileID: -8297569261210016749}
-  - {fileID: 772815877034346594}
   - {fileID: 8218560409902689589}
+  - {fileID: -8297569261210016749}
+  - {fileID: 8167643342836895551}
   - {fileID: 208755356813978040}
-  - {fileID: 7379136381769046372}
+  - {fileID: -1745236543493970237}
+  - {fileID: -8464389977205436873}
   - {fileID: -9137484519845660299}
   - {fileID: 9079690563742539590}
-  - {fileID: -1745236543493970237}
-  - {fileID: -459274423059012064}
-  - {fileID: -8464389977205436873}
-  - {fileID: 8167643342836895551}
-  - {fileID: -5129447834918703318}
-  - {fileID: -2003064531561060979}
   - {fileID: -1992081582253873557}
+  - {fileID: -5129447834918703318}
+  - {fileID: 772815877034346594}
+  - {fileID: -7526660543599495627}
+  - {fileID: 7379136381769046372}
+  - {fileID: -5064256407120982814}
+  - {fileID: 8452207919186746744}
+  - {fileID: 5333048160597149904}
+  - {fileID: 7793628090451549462}
+  - {fileID: -2003064531561060979}
+  - {fileID: -459274423059012064}
   - {fileID: 388622574735610535}
   customLoaderName: 
   m_renderMode: 1
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &5333048160597149904
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_symmetricProjection: 0
   m_optimizeMultiviewRenderRegions: 0
   m_multiviewRenderRegionsOptimizationMode: 0
-  m_hasMigratedMultiviewRenderRegionSetting: 0
+  m_hasMigratedMultiviewRenderRegionSetting: 1
   m_foveatedRenderingApi: 0
   m_useOpenXRPredictedTime: 0
 --- !u!114 &7379136381769046372
