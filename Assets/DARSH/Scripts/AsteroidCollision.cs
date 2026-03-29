@@ -4,33 +4,36 @@ public class AsteroidCollision : MonoBehaviour
 {
     [Header("Flight Settings")]
     public Transform earthTarget;
-    public float speed = 500f; // High speed to cross the massive distance
+    public float speed = 500f;
+
+    [Header("Visual Effects")]
+    // 1. THIS IS THE NEW LINE: It creates the empty slot in the Inspector
+    public GameObject explosionPrefab; 
 
     void Update()
     {
         if (earthTarget != null)
         {
-            // 1. Find the exact direction pointing at the Earth
+            // Move the asteroid toward the Earth
             Vector3 direction = (earthTarget.position - transform.position).normalized;
-            
-            // 2. Move the asteroid smoothly along that path
             transform.position += direction * speed * Time.deltaTime;
-        }
-        else
-        {
-            Debug.LogWarning("Please assign the Earth target in the Inspector!");
         }
     }
 
-    // 3. Detect the moment of impact
     void OnCollisionEnter(Collision collision)
     {
-        // Verify it actually hit the Earth and not something else
+        // Check if the thing we hit is actually the Earth
         if (collision.gameObject.name == "Earth")
         {
-            Debug.Log("IMPACT LOGGED: Asteroid has struck the Earth boundary.");
+            Debug.Log("IMPACT!");
             
-            // Hide the asteroid to confirm the physics trigger works
+            // 2. THIS IS THE NEW LOGIC: It spawns the explosion prefab
+            if (explosionPrefab != null)
+            {
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+            }
+            
+            // 3. Hide the massive rock so it doesn't block the fire
             gameObject.SetActive(false);
         }
     }
