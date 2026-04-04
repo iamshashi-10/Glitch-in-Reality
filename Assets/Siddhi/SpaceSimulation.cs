@@ -40,3 +40,42 @@ public class SpaceSimulation : MonoBehaviour
         }
     }
 }
+
+// using UnityEngine;
+
+// public class PlaneMovement : MonoBehaviour
+// {
+//     public float speed = 8f;
+//     public float rotationSpeed = 10f;
+
+//     private Rigidbody rb;
+
+//     void Start()
+//     {
+//         rb = GetComponent<Rigidbody>();
+//     }
+
+//     void FixedUpdate()   // ✅ ONLY ONE
+//     {
+//         float moveX = Input.GetAxis("Horizontal");
+//         float moveZ = Input.GetAxis("Vertical");
+
+//         Vector3 movement = new Vector3(moveX, 0f, moveZ);
+
+//         rb.velocity = movement * speed;
+
+//         if (movement.magnitude > 0.1f)
+//         {
+//             Quaternion targetRotation = Quaternion.LookRotation(movement);
+//             transform.rotation = Quaternion.Slerp(
+//                 transform.rotation,
+//                 targetRotation,
+//                 rotationSpeed * Time.deltaTime
+//             );
+//         }
+//         else
+//         {
+//             rb.velocity = Vector3.zero;
+//         }
+//     }
+// }
