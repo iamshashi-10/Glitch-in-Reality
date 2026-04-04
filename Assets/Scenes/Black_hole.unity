@@ -24957,6 +24957,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4954185412218885677, guid: 092623852845eea40ba3203c149c65f2, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4954185412218885677, guid: 092623852845eea40ba3203c149c65f2, type: 3}
+      propertyPath: m_RenderingLayerMask
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7973915629106477781, guid: 092623852845eea40ba3203c149c65f2, type: 3}
       propertyPath: m_Name
       value: BlackHole
