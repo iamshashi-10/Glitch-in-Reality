@@ -1,21 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
 
 public class StylisedBomb : MonoBehaviour
 {
-    [SerializeField] private CameraController cameraController;
     [SerializeField] private VisualEffect sparkParticles;
 
-    private void Awake()
+    public void StartExplosion()
     {
-        //sparkParticles.Stop();
-    }
-
-    private void StartExplosion()
-    {
-        sparkParticles.Play();
-        cameraController.StartExplosion();
+        if (sparkParticles != null)
+        {
+            sparkParticles.Play();
+        }
+        else
+        {
+            Debug.LogError("SparkParticles NOT assigned!");
+        }
     }
 }
