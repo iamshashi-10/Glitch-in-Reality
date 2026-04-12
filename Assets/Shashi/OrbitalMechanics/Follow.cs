@@ -4,7 +4,7 @@ public class Follow : MonoBehaviour
 {
     public Transform target;
 
-    public float distance = 15f;
+    public float distance = 30f;
     public Vector3 offset = new Vector3(0, 5, 0); // only X & Y offset
     public float smoothSpeed = 5f;
 
