@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824058ec7cfa84b5ab5bf703370bafab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlanetPortal
-  sceneToLoad: Bigbang
+  sceneToLoad: beforeBisphot
 --- !u!1 &1156743193
 GameObject:
   m_ObjectHideFlags: 0
