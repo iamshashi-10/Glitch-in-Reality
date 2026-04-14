@@ -8,7 +8,7 @@ public class ChaseAsteroid : MonoBehaviour
 
     [Header("Camera Settings")]
     public Vector3 offset = new Vector3(0, 10, -50); 
-    public float stopDistance = 900f; // How far from Earth the camera should stop
+    public float stopDistance = 7000f; // How far from Earth the camera should stop
 
     private bool hasStopped = false;
 
@@ -24,7 +24,7 @@ public class ChaseAsteroid : MonoBehaviour
             {
                 // Follow logic
                 transform.position = asteroid.position + asteroid.TransformDirection(offset);
-                transform.rotation = asteroid.rotation;
+                transform.LookAt(earthTarget.position);
             }
             else
             {

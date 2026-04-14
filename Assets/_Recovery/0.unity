@@ -138,8 +138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChaseAsteroid
   asteroid: {fileID: 1724845602}
   earthTarget: {fileID: 986898722}
-  offset: {x: 0, y: 15, z: -40}
-  stopDistance: 2000
+  offset: {x: 0, y: 5, z: -40}
+  stopDistance: 7000
 --- !u!1 &543253897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1158,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 250
+      scalar: 500
       minScalar: 1
       maxCurve:
         serializedVersion: 2
