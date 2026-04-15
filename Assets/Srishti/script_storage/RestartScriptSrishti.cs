@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RestartScript : MonoBehaviour
+public class RestartScriptSrishti : MonoBehaviour
 {
     public void RestartScene()
     {
