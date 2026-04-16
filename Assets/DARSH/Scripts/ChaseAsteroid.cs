@@ -4,39 +4,51 @@ public class ChaseAsteroid : MonoBehaviour
 {
     [Header("Targets")]
     public Transform asteroid;
-    public Transform earthTarget; // Add this so the camera knows where Earth is
+    public Transform earthTarget; 
 
     [Header("Camera Settings")]
     public Vector3 offset = new Vector3(0, 10, -50); 
-    public float stopDistance = 7000f; // How far from Earth the camera should stop
+    public float stopDistance = 7000f; 
 
     private bool hasStopped = false;
+    
+    // 1. NEW: This acts as the lock. It is false until the button is clicked.
+    private bool isChasing = false; 
 
     void Update()
     {
-        // 1. Check if we have an asteroid to follow
+        // 2. NEW: If the button hasn't been clicked yet, stop reading the rest of the code.
+        if (isChasing == false) 
+        {
+            return; 
+        }
+
+        // --- The rest of your original logic stays exactly the same! ---
         if (asteroid != null && asteroid.gameObject.activeInHierarchy && !hasStopped)
         {
-            // 2. Check how far we are from Earth
             float distanceToEarth = Vector3.Distance(transform.position, earthTarget.position);
 
             if (distanceToEarth > stopDistance)
             {
-                // Follow logic
                 transform.position = asteroid.position + asteroid.TransformDirection(offset);
                 transform.LookAt(earthTarget.position);
             }
             else
             {
-                // We reached the stop zone! 
                 hasStopped = true;
             }
         }
         
-        // 3. If we've stopped, stay put and look at the impact site
         if (hasStopped && earthTarget != null)
         {
             transform.LookAt(earthTarget.position);
         }
+    }
+
+    // 3. NEW: This must be a "public" function so the UI Button can see it
+    public void TriggerChase()
+    {
+        // When the button is clicked, unlock the Update loop!
+        isChasing = true;
     }
 }
