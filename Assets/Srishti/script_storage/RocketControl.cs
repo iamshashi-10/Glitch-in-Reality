@@ -46,9 +46,9 @@ public class RocketControl : MonoBehaviour
     }
 
     // WASD Steering
-    float horizontal = Input.GetAxis("Horizontal");
-    float vertical = Input.GetAxis("Vertical");
-    transform.Translate(new Vector3(horizontal, 0, vertical) * speed * Time.deltaTime, Space.World);
+    // float horizontal = Input.GetAxis("Horizontal");
+    // float vertical = Input.GetAxis("Vertical");
+    // transform.Translate(new Vector3(horizontal, 0, vertical) * speed * Time.deltaTime, Space.World);
 }
 
  
