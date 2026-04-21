@@ -1,15 +1,7 @@
 fileFormatVersion: 2
-guid: b311b5eab0681b645b1de23bcc4bf848
-timeCreated: 1429352528
-licenseType: Store
+guid: 7f8eaf18878db4b2a96a64d776f7e82b
 DefaultImporter:
+  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 34972
-  packageName: Space Shuttle
-  packageVersion: v 1.0
-  assetPath: Assets/AMINT/SpaceShuttle/Demo/SpaceShuttle_Scene.unity
-  uploadId: 743233
