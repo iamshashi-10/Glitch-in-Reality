@@ -411,7 +411,6 @@ GameObject:
   - component: {fileID: 523074836}
   - component: {fileID: 523074835}
   - component: {fileID: 523074834}
-  - component: {fileID: 523074833}
   - component: {fileID: 523074838}
   - component: {fileID: 523074839}
   m_Layer: 5
@@ -421,29 +420,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &523074833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523074832}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54508c36a8d5f44b9a9a8e7961ce3611, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  solarSystem: {fileID: 0}
-  slider: {fileID: 496197992}
-  speedText: {fileID: 772283579}
-  speedLevels:
-  - 0.25
-  - 0.5
-  - 0.75
-  - 1
-  - 1.5
-  - 2
-  - 4
 --- !u!114 &523074834
 MonoBehaviour:
   m_ObjectHideFlags: 0

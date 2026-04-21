@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class examplescene : MonoBehaviour {
 
 	// Use this for initialization
@@ -38,6 +38,9 @@ public class examplescene : MonoBehaviour {
 		// }	
 		if (GUI.Button(new Rect(x, y+dy*cnt++, sx, sy), "Observe our Milkyway galaxy")) {
 			RenderSettings.skybox = (Material)Resources.Load("Skybox4");
+		}
+		if (GUI.Button(new Rect(x, y+dy*cnt++, sx, sy), "Exit")) {
+			SceneManager.LoadScene("Spacecraft_interaction");
 		}	
 	}
 }
