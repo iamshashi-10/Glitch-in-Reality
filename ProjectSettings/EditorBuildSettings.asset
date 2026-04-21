@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Solar_Eclipse.unity
     guid: 52612d705f7f3409693a4a6eb9af6849
+  - enabled: 1
+    path: Assets/Scenes/newBigBang/afterBisphot.unity
+    guid: eacf628acb9ee452bb3ef0f2de9eebf8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b8f21a666fee20549b8a97e9380d9b08, type: 2}
