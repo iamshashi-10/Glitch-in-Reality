@@ -13,4 +13,9 @@ public class SceneLoader : MonoBehaviour
         Time.timeScale = 1f; // Reset time scale when starting solar eclipse scene
         SceneManager.LoadScene("Solar_Eclipse"); // ⚠️ EXACT scene name
     }
+    public void LoadOrbital()
+    {
+        Time.timeScale = 1f; // Reset time scale when starting orbital mechanics scene
+        SceneManager.LoadScene("Orbital_Mechanics"); // ⚠️ EXACT scene name
+    }
 }

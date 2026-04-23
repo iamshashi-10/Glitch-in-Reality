@@ -2116,7 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd4a8a68b174494ac4fb53f1a0f0cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PortalSceneLoader
-  sceneToLoad: Orbital Mechanics
+  sceneToLoad: Orbital_Mechanics
 --- !u!114 &1036096716
 MonoBehaviour:
   m_ObjectHideFlags: 0
