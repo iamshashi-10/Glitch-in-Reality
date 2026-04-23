@@ -35,10 +35,10 @@ public class RocketControl : MonoBehaviour
     void Update() 
 {
     // Add this back so the keyboard still works!
-    if (Input.GetKeyDown(KeyCode.Return)) 
-    {
-        Launch();
-    }
+    // if (Input.GetKeyDown(KeyCode.Return)) 
+    // {
+    //     Launch();
+    // }
 
     if (isFlying)
     {
