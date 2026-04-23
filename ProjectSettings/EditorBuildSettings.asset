@@ -24,14 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/newBigBang/Bisphot.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
   - enabled: 1
-    path: Assets/Scenes/Orbital Mechanics.unity
+    path: Assets/Scenes/Orbital_Mechanics.unity
     guid: cd9f3799a16c9492d9bdb699a979ff3e
   - enabled: 1
     path: Assets/Scenes/Solar_Eclipse.unity
-    guid: 52612d705f7f3409693a4a6eb9af6849
+    guid: 3aee39e5eb6a141588b42d6a36a326c9
   - enabled: 1
     path: Assets/Scenes/newBigBang/afterBisphot.unity
-    guid: eacf628acb9ee452bb3ef0f2de9eebf8
+    guid: 9165cadc54ade4ec1b6eda0a3b1eb572
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b8f21a666fee20549b8a97e9380d9b08, type: 2}
