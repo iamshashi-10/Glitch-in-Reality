@@ -1,102 +1,83 @@
 # Glitch-in-Reality
 
-README: Glitch in Reality
-Glitch in Reality is an immersive virtual reality (VR) simulation built in Unity 6 that allows users to explore and manipulate complex cosmic phenomena. By transitioning from passive 2D learning to an active 3D environment, the project aims to reduce cognitive load and enhance understanding of abstract physics and astronomy.  
-+4
+# Glitch in Reality: An Immersive VR Space Simulation
 
-🚀 Project Overview
-The simulation serves as a physics laboratory for celestial mechanics, featuring six distinct, interactive benchmarks connected through a central navigation hub.  
-+3
+An interactive virtual reality application developed in **Unity 6** using the **Universal Render Pipeline (URP)** designed to grant users experiential agency over complex cosmic events.This project aims to reduce cognitive load and enhance conceptual understanding of abstract physics through immersive, cause-and-effect gameplay loops.
 
-Core Benchmarks
-Spacecraft Launch: Manually execute liftoff with real-time telemetry and speed controls.  
-+2
+---
 
-Zero-G Navigation: Pilot a spacecraft through a central hub to reach themed wormhole portals.  
-+1
+## 🚀 Features & Benchmarks
 
-Big Bang Simulation: Trigger a VFX-driven explosion and navigate an interactive cosmic timeline.  
-+2
+The simulation features six distinct interactive cosmic benchmarks connected via a central zero-gravity hub:
 
-Orbital Mechanics: Explore the Earth-Sun-Moon system driven by a Newtonian N-body engine, including solar eclipse events.  
-+2
+* **Spacecraft Launch:** Manual liftoff sequence with real-time telemetry and speed controls.
+* **Zero-G Navigation:** Smooth VR flight navigation using wormhole-based scene transitions.
+* **Big Bang Simulation:** User-triggered explosion using **VFX Graph** with an interactive cosmic evolution timeline.
+* **Orbital Mechanics:** Physics-driven Earth-Sun-Moon system utilizing **Newtonian N-body gravitation** and solar eclipse simulations.
+* **Asteroid Collision:** Physics-driven impact scenario with adjustable kinetic energy sliders and layered particle feedback.
+* **Black Hole Environment:** Custom **Shader Graph** implementation of event horizons, accretion disks, and relativistic gravitational lensing.
+---
 
-Asteroid Collision: Manipulate kinetic energy sliders to observe a planetary impact with layered particle effects.  
-+2
+## 🛠️ Technology Stack
 
-Black Hole Environment: Observe relativistic phenomena like event horizons and gravitational lensing through custom shaders.  
-+2
+* **Engine:** Unity 6 (6000.4.0f1)
+* **Render Pipeline:** Universal Render Pipeline (URP 17.4.0)
+* **XR Framework:** XR Interaction Toolkit (v3.4.1) 
+* **Tracking:** OpenXR Plugin (v1.16.1) 
+* **Target Headset:** Meta Quest 2
 
-🛠 Technology Stack
-Engine: Unity 6 (6000.4.0f1)   
-+2
+---
 
-Render Pipeline: Universal Render Pipeline (URP) 17.4.0   
-+1
+## 🔧 Installation & Setup
 
-XR Framework: XR Interaction Toolkit 3.4.1   
-+2
+### Prerequisites
+* **Unity Editor:** Version 6000.4.0f1 
+* **XR Hardware:** Meta Quest 2 (via Oculus Link or standalone build)
+* **System:** Windows 10/11 with an OpenXR supported GPU 
 
-Target Hardware: Meta Quest 2 (via OpenXR)   
-+1
+### Step-by-Step
+1.  **Clone the Repository:**
+    ```bash
+    git clone [repository-url]
+    ```
+2.  **Open in Unity:** Add the root folder in Unity Hub and ensure the editor version matches **6000.4.0f1**.
+3. **Configure Render Pipeline:** Ensure `URP.asset` is assigned in `Project Settings > Graphics`.
+4.  **Build Settings:** Verify all scenes (Launch, Interaction Hub, Big Bang, Orbital, Asteroid, Black Hole) are included in the build list.
+5.  **Run:** Connect your Quest 2 and select **Build and Run**.
 
-Visuals: Shader Graph (relativistic anomalies) and VFX Graph (explosions)   
-+1
+---
 
-🔧 Installation & Setup
-Prerequisites
-Unity Hub with Editor version 6000.4.0f1   
-+1
+## 🎮 Controls
 
-Git 2.30+   
+| Action | VR Input (Meta Quest 2) | Desktop Fallback |
+| :--- | :--- | :--- |
+| **Launch Rocket** | UI Button (Ray Interactor) | Enter Key|
+| **Adjust Speed/Time** | UI Slider (Ray Interactor) | Mouse Drag|
+| **Navigation** | Joystick Locomotion | WASD + Mouse  |
+| **Enter Wormhole** | Fly into Trigger Collider |Walk into Trigger  |
+| **Switch Cameras** | UI Button (Ray Interactor) | Mouse Click  |
 
-Meta Quest 2 with Oculus Link or a compatible OpenXR GPU for desktop testing   
+---
 
-Opening the Project
-Clone this repository to your local machine.  
+## 📂 Project Structure
 
-Add the project in Unity Hub and wait for asset import (approx. 5–15 minutes).  
+* **`Assets/Garg/`**: Big Bang simulation and VFX assets.
+* **`Assets/Shashi/`**: Orbital mechanics and solar eclipse logic .
+* **`Assets/DARSH/`**: Asteroid collision physics and impact effects .
+* **`Assets/Ayush/`**: Black hole shaders and multi-camera systems .
+* **`Assets/Srishti/` & `Assets/Siddhi/`**: Spacecraft launch, hub navigation, and portal management .
 
-Ensure URP is assigned in Project Settings > Graphics.  
+---
 
-Verify that all benchmark scenes are added to the Build Settings.  
+## 📝 Authors
 
-🎮 Controls
-Action	VR Input	Desktop Fallback
-Locomotion	Joystick / Teleport	
-WASD + Mouse
+* **Ayush Garg** (230254) 
+* **Ayush Kumar** (230261)
+* **Darsh Vikrant Patil** (230343) 
+* **Shashi Bhidodiya** (230956) 
+* **Siddhi Gupta** (231007) 
+* **Srishti Parmar** (231036) 
+---
 
-Interactions	XR Ray Interactor	
-Mouse Click
-
-Launch Rocket	UI Button (Ray)	
-Enter Key
-
-Adjust Parameters	UI Sliders (Ray)	
-Mouse Drag
-
-📂 System Architecture
-The project uses an event-driven, scene-based architecture.  
-
-Assets/Scripts/: Contains core modules for N-body gravity, camera tracking, and scene management.  
-+1
-
-Assets/Shaders/: Custom Shader Graphs for the Sun, Black Hole, and Heat Distortion.  
-+2
-
-Assets/Prefabs/: Optimized XR Origin and planetary impact assets.  
-+2
-
-⚠️ Known Limitations
-Physics: Asteroid movement is currently kinematic and does not account for atmospheric drag or fragmentation.  
-+1
-
-UI: The Big Bang timeline uses legacy OnGUI(), which renders in screen-space and may break VR immersion.  
-+1
-
-Transitions: Scene loading is synchronous, which may cause brief frame drops during transitions.  
-+1
-
-📝 Credits
-Developers: Ayush Garg, Ayush Kumar, Darsh Vikrant Patil, Shashi Bhidodiya, Siddhi Gupta, and Srishti Parmar .
-Special Thanks: Prof. Amar Behera for guidance and support.
+## 📜 Acknowledgments
+Special thanks to **Prof. Amar Behera** for his invaluable feedback and support throughout the development of this project.
